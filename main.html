@@ -1,45 +1,39 @@
 <!DOCTYPE html>
 
 <html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-	<link rel="stylesheet" href="styles.css">
-	<title> Job App Form</title>
-</head>
+  <body>
+    <form method="post">
+      <label for="name" id="name">Name</label>
+      <input type="text" required id="name" />
+      <label for="email" id="email">Email</label>
+      <input type="email" name="email" id="email" required />
+      <label for="gender" id="gender">Gender</label>
+      <label for="male" id="male">Male</label>
+      <input type="radio" name="gender" id="male" required />
+      <label for="female" id="female">Female</label>
+      <input type="radio" name="gender" id="female" required />
+      <label for="laptop" id="laptop">Laptop Brands</label>
+      <select name="laptop" id="laptop">
+        <option value="apple">Apple</option>
+        <option value="asus">Asus</option>
+        <option value="hp">HP</option>
+      </select>
+      <label for="age" id="age">Age</label>
+      <input type="number" name="age" id="age" required />
+      <label for="dob" id="dob">DOB</label>
+      <input type="date" name="dob" id="dob" required />
+      <label for="password" id="password">Password</label>
+      <input type="password" name="password" id="password" required />
 
-<body>
-	<form action="/submit"
-	<label for="name"> Name</label>
-	<input type="text" id="name" required> <br><br>
-	<label for="email"> Email</label>
-	<input type="email" id="email" name="email" required> <br><br>
-	<label for="gender"> Gender</label> 
-	<input type="radio" id="gender" name="gender" value="male" required>
-	<label for="gender">Male</label>
-	<input type="radio" id="gender" name="gender" value="female" required>
-	<label for="gender">Female</label> <br><br>
-	<label for="brands"> Laptop Brands</label>
-	<select name="Brands" id="brands">
-		<option value="Apple"> Apple</option>
-		<option value="Asus"> Asus</option>
-		<option value="HP"> HP</option>
-	</select>
-	<br><br>	
-	<label for="age"> Age</label>
-	<input type="number" id="age" required> <br><br>
-	<label for="dob"> DOB</label>
-	<input type="date" id="dob" required> <br><br>
-	<label for="password"> Password</label>
-	<input type="password" id="password" required> <br><br>
-	<label for="portfolio"> Enter your portfolio link</label>
-	<input type="url" id="portfolio" required> <br><br>
-	<input type="submit" value="submit"> 
-</form>
-
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
-</body>
-
+      <label for="portfolio">Enter your portfolio link</label>
+      <input type="url" name="link" id="portfolio" />
+      <button type="submit" id="button">Submit</button>
+    </form>
+    <!-- the entire body must be written by student -->
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
 </html>
